@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Modify PDF Content Extension",
+  "version": "1.0",
+  "permissions": ["activeTab", "declarativeContent", "storage", "downloads"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["libs/pdf-lib.min.js", "libs/jszip.min.js", "content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
