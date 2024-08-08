@@ -168,6 +168,7 @@ async function processPdf(pdfBytes, fileName) {
     "God Group Company Limited",
     "Bac Ninh 222000",
     "Viet Nam",
+    "Tax ID: 2301141907",
   ];
 
   if (dateMatch && dateMatch[1]) {
